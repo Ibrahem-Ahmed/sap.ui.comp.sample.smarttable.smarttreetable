@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smart Table with Tree Table</title>
+
+	<script id="sap-ui-bootstrap"
+		src="./resources/sap-ui-core.js"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-theme="sap_belize"
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-resourceroots='{
+			"sap.ui.comp.sample.smarttable.smarttreetable": "./",
+			"sap.ui.demo.mock": "mockdata"
+		}'>
+	</script>
+
+	<style>
+		html, body { height: 100%; }
+	</style>
+	<script>
+		sap.ui.getCore().attachInit(function() {
+			new sap.m.Shell({
+				app: new sap.ui.core.ComponentContainer({
+					height : "100%",
+					name : "sap.ui.comp.sample.smarttable.smarttreetable"
+				})
+			}).placeAt("content");
+		});
+	</script>
+</head>
+
+<body class="sapUiBody sapUiSizeCozy" id="content">
+</body>
+</html>
