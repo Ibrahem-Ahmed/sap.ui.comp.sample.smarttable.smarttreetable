@@ -10,10 +10,17 @@
 	<VBox fitContainer="true">
 		<!-- showRowCount should be set to false as the correct count cannot be
 			determined for tree table scenario -->
-		<smartTable:SmartTable id="smartTreeTable"
-			entitySet="orgHierarchy" tableType="TreeTable" useExportToExcel="false"
-			useVariantManagement="false" useTablePersonalisation="true" header="Hierarchy"
-			showRowCount="false" enableAutoBinding="true" beforeRebindTable="onBeforeRebindTable"
+		<smartTable:SmartTable 
+			id="smartTreeTable"
+			entitySet="orgHierarchy" 
+			tableType="TreeTable" 
+			useExportToExcel="false"
+			useVariantManagement="false" 
+			useTablePersonalisation="true" 
+			header="Hierarchy"
+			showRowCount="false" 
+			enableAutoBinding="true" 
+			beforeRebindTable="onBeforeRebindTable"
 			initiallyVisibleFields="HIERARCHY_NODE,DESCRIPTION,LEVEL,DRILLDOWN_STATE,MAGNITUDE" enableAutoColumnWidth="true">
 			<!-- layout data used to make the table growing but the filter bar fixed -->
 			<smartTable:layoutData>
